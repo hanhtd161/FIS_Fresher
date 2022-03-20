@@ -1,0 +1,23 @@
+package fis.topic01.pratice01;
+
+public class StudentList implements ISortStrategy {
+	private Student[] students = new Student[100];
+	private int count = 0;
+	private ISortStrategy sortStrategy;
+	
+
+	public void addStudent(Student student) {
+	
+	}
+
+	public void setSortStrategy(ISortStrategy sortStrategy) {
+		this.sortStrategy = sortStrategy;
+	}
+
+	@Override
+	public void sort(Comparable<Object>[] data, int count) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

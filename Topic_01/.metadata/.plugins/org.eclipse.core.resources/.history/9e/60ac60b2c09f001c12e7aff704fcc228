@@ -1,0 +1,5 @@
+package fis.topic01.pratice01;
+
+public interface ISortStrategy<T> {
+	 void sort(Comparable<T>[] data ,int count);
+}

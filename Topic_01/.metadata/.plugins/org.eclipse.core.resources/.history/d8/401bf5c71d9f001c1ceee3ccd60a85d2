@@ -1,0 +1,11 @@
+package fis.topic01.practice02;
+
+public class Motor implements payFee {
+
+	@Override
+	public int payFee(int fee) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

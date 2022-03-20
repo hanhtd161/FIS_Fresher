@@ -1,0 +1,11 @@
+package fis.topic01.pratice01;
+
+public class DecimalValidation implements IValidation {
+
+	@Override
+	public boolean validate(String data) {
+		
+		return false;
+	}
+
+}

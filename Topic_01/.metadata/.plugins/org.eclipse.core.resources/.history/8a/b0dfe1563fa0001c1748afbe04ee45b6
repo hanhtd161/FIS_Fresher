@@ -1,0 +1,9 @@
+package fis.topic01.pratice03;
+
+import java.awt.print.Printable;
+
+public interface C {
+	default void Print(String a) {
+		
+	}
+}

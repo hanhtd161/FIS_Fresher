@@ -1,0 +1,90 @@
+package fis.topic01.pratice03;
+
+public class MaiAnTiem {
+	private int hp;
+	private int d;
+	private int s;
+	private String t;
+	
+	public MaiAnTiem(int hp, int d, int s, String t) {
+		this.hp = hp;
+		this.d = d;
+		this.s = s;
+		this.t = t;
+	}
+	public double caculateGs(int s) {
+		double g;
+		switch (s%6) {
+		case 0: {
+			g = s/2;
+		}
+		case 1: {
+			g = 2*s;
+		}
+		case 2: {
+			g = 2*s;
+		}
+		case 3: {
+			g = - Math.pow((s%9),3)/5;
+		}
+		case 4: {
+			g = - Math.pow((s%30),2) + 3*s;
+		}
+		case 5: {
+			g = - Helper.calculateTriangularNumber((s%5)+5);
+		}
+		default:
+			g = s/2;
+		}
+		return g;
+	}
+	
+	public int calculateP() {
+		int P1,P2;
+		double fdst;
+		if(Helper.isPrime(hp)){
+			P1 = 1000;
+			P2 = (hp + s) % 1000;
+		} else {
+			P1 = hp;
+			P2 = (hp + d) %100;
+		}
+		if(d<200 && !Helper.isFibonacci(d+s)) {
+			fdst = 0;
+		} else if(d>800) {
+			fdst = -d * s/ 1000;
+		} else {
+			if(d>=200 & d<300) {
+				double bittenPercent = (d+P1+P2)/1000;
+				if(bittenPercent > 0.8) {
+					return 0;
+				}
+				if(bittenPercent > 0.6 && bittenPercent <= 0.8) {
+					hp = hp -50;
+				}
+				if(bittenPercent > 0.4 && bittenPercent <= 0.6) {
+					hp = hp -30;
+				}
+				if(bittenPercent > 0.2 && bittenPercent <= 0.4) {
+					hp = hp -20;
+				}
+				if(Helper.isPrime(hp)){
+					P1 = 1000;
+					P2 = (hp + s) % 1000;
+				} else {
+					P1 = hp;
+					P2 = (hp + d) %100;
+				}
+			}
+			double gs = caculateGs(s);
+			
+			int pt;
+			
+			
+		}
+		return 0;
+	}
+	
+	
+	
+}

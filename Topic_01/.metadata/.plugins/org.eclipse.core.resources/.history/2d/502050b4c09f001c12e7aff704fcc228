@@ -1,0 +1,19 @@
+package fis.topic01.pratice01;
+
+public class InsertionSortStrategy<T> implements ISortStrategy<T> {
+
+	@Override
+	public void sort(Comparable<T>[] data, int count) {
+		for(int i = 1;i< count;i++) {
+			Comparable<T> key = data[i];
+			int j = i - 1;
+			while(j>=0 && data[j].compareTo( ((T)key))>0) {
+				data[j+1] = data[j];
+				j--;
+			}
+			data[j+1] = key;
+		}
+
+	}
+
+}

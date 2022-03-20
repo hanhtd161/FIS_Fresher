@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="jdk.internal.org.jline.reader.impl.history.DefaultHistory"/>
+    <fullyQualifiedTypeName name="fis.topic01.pratice01.StudentList"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="fis.topic01.pratice01.InsertionSortStrategy"/>
+    <fullyQualifiedTypeName name="fis.topic01.pratice01.BubbleSortStrategy"/>
+    <fullyQualifiedTypeName name="fis.topic01.pratice01.SelectionSortStrategy"/>
+    <fullyQualifiedTypeName name="java.text.DateFormat"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="java.text.ParseException"/>
+    <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+    <fullyQualifiedTypeName name="fis.topic01.pratice01.IValidation"/>
+    <fullyQualifiedTypeName name="fis.topic01.pratice01.Form"/>
+    <fullyQualifiedTypeName name="fis.topic01.pratice01.Component"/>
+    <fullyQualifiedTypeName name="fis.topic01.pratice01.DateValidation"/>
+    <fullyQualifiedTypeName name="fis.topic01.practice02.payFee"/>
+    <fullyQualifiedTypeName name="java.lang.Comparable"/>
+    <fullyQualifiedTypeName name="fis.topic01.practice02.Constant.BICYCLE_FEE"/>
+    <fullyQualifiedTypeName name="fis.topic01.practice02.Constant"/>
+    <fullyQualifiedTypeName name="fis.topic01.practice02.Constant.MOTOR_FEE"/>
+    <fullyQualifiedTypeName name="org.graalvm.compiler.lir.LIRInstruction.Temp"/>
+    <fullyQualifiedTypeName name="org.graalvm.compiler.phases.common.VerifyHeapAtReturnPhase"/>
+    <fullyQualifiedTypeName name="fis.topic01.pratice03.Helper"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="com.sun.java_cup.internal.runtime.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="fis.topic01.pratice03.MaiAnTiem"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="com.sun.org.apache.xerces.internal.impl.dv.ValidatedInfo"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="fis.topic01.pratice01.Test"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="sun.awt.www.content.audio.x_aiff"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="fis.topic01.pratice01.Student"/>
+    <fullyQualifiedTypeName name="java.awt.print.Printable"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+</qualifiedTypeNameHistroy>

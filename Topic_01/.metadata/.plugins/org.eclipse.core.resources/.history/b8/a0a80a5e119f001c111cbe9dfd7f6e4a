@@ -1,0 +1,30 @@
+package fis.topic01.pratice01;
+
+import java.util.Date;
+
+public class MainApplication {
+	public static void main(String[] args ) {
+		Student student1 = new Student(1, "Hanh", new Date());
+		Student student2 = new Student(2, "Duc", new Date());
+		
+		//initialize studentList instance
+		StudentList studentList = new StudentList();
+		studentList.setSortStrategy(new BubbleSortStrategy());
+		
+		//add students to studentList
+		studentList.addStudent(student2);
+		studentList.addStudent(student1);
+		studentList.display();
+		System.out.println("--------------");
+		
+		//sort student
+		studentList.sort();
+		studentList.display();
+		System.out.println("--------------");
+		
+		//remove student
+		studentList.removeStudent(1);
+		studentList.display();
+		
+	}
+}

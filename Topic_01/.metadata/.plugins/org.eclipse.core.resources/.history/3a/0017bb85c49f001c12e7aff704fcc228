@@ -1,0 +1,7 @@
+package fis.topic01.pratice03;
+
+public class Helper {
+	public static boolean checkFibonaci() {
+		return true;
+	}
+}

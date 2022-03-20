@@ -1,0 +1,12 @@
+package fis.topic01.pratice03;
+
+public class Helper {
+	public static boolean isPerfectSquare(int x) {
+		int s = (int) Math.sqrt(x);
+		return s*s == x;
+	}
+	public static boolean isFibonacci(int n){
+		
+		return false;
+	}
+}

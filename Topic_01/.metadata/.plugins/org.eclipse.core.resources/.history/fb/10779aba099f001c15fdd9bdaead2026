@@ -1,0 +1,28 @@
+package fis.topic01.pratice01;
+
+public class StudentList {
+	private Student[] students = new Student[100];
+	private int count = 0;
+	private ISortStrategy sortStrategy;
+	
+	public StudentList() {
+	}
+	
+	public void addStudent(Student student) {
+		if(this.count >= 100) {
+			System.out.println("StudentList is full");
+		} else {
+			this.students[this.count + 1] = student;
+			this.count +=1;
+		}
+	}
+
+	public void setSortStrategy(ISortStrategy sortStrategy) {
+		this.sortStrategy = sortStrategy;
+	}
+
+	public void sort() {
+		sortStrategy.sort(students, count);		
+	}
+	
+}

@@ -1,0 +1,11 @@
+package fis.topic01.pratice01;
+
+public class StringMaxLengthValidation implements IValidation {
+
+	@Override
+	public boolean validate(String data) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

@@ -1,0 +1,19 @@
+package fis.topic01.pratice03;
+
+public class Helper {
+	public static boolean checkFibonacci(int n){
+		if(n ==0 || n ==1) {
+			return true;
+		}
+		int f1 = 0, f2 =1, fn;
+		do {
+			fn = f1 + f2;
+			f1 = f2;
+			f2 =fn;
+		} while(fn < n);
+		if(fn == n) {
+			return true;
+		}
+		return false;
+	}
+}

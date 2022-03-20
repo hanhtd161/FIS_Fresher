@@ -1,0 +1,7 @@
+package fis.topic01.pratice01;
+
+public class MainApplication {
+	public static void main(String[] args ) {
+		Student student1 = new Student
+	}
+}

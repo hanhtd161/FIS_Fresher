@@ -1,0 +1,53 @@
+package fis.topic01.pratice01;
+
+public class StudentList {
+	private Student[] students = new Student[100];
+	private int count = 0;
+	private ISortStrategy sortStrategy;
+	
+	public StudentList() {
+	}
+	
+	public void addStudent(Student student) {
+		if(this.count >= 100) {
+			System.out.println("StudentList is full");
+		} else {
+			for(int i = 0; i < 100; i++) {
+				if(students[i] == null) {
+					students[i] = student;
+					break;
+				}
+			}
+			this.count +=1;
+		}
+	}
+	
+	public void removeStudent(int code) {
+		int initalCount = count;
+		for(int i =0; i< count ;i++) {
+			if(students[i].getCode() == code) {
+				students[i] = null;
+				this.count --;
+				break;
+			}
+		}
+		if(initalCount == count) {
+			System.out.println("Student doesn't exist");
+		}
+	}
+	
+	public void display() {
+		for(int i =0; i < count; i++) {
+			System.out.println(students[i].toString());
+		}
+	}
+
+	public void setSortStrategy(ISortStrategy sortStrategy) {
+		this.sortStrategy = sortStrategy;
+	}
+
+	public void sort() {
+		sortStrategy.sort(students, count);		
+	}
+	
+}
