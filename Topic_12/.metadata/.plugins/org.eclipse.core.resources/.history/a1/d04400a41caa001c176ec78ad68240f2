@@ -1,0 +1,10 @@
+package practice.springjdbc.config;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ComponentScan({"practice.spring.jdbc.dao"})
+public class AppConfiguration {
+	
+}

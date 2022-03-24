@@ -1,0 +1,5 @@
+package practice.springjdbc.model;
+
+public class Department {
+
+}

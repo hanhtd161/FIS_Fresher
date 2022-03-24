@@ -1,0 +1,5 @@
+package practice.springjdbc.demo;
+
+public class QueryForRowSetReturnSqlRowSet_Test {
+
+}

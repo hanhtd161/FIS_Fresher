@@ -1,0 +1,21 @@
+package practice.springjdbc.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Department {
+	 private Long deptId;
+	 private String deptNo;
+	 private String deptName;
+	public Department(Long deptId, String deptNo, String deptName) {
+		super();
+		this.deptId = deptId;
+		this.deptNo = deptNo;
+		this.deptName = deptName;
+	}
+	 
+}

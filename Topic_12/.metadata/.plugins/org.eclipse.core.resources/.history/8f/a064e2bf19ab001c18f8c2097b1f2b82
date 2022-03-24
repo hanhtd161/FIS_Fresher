@@ -1,0 +1,5 @@
+package com.fis.java.emaildemo.config;
+
+public class MailConfig {
+
+}

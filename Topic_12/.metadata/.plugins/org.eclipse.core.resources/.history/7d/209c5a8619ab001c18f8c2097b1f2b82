@@ -1,0 +1,5 @@
+package com.fis.java.emaildemo.controller;
+
+public class SimpleEmailExampleController {
+
+}

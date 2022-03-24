@@ -1,0 +1,25 @@
+content_assist_autoactivation_triggers_java=qwertyuiopasdfghjklzxcvbnm
+content_assist_disabled_computers=org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.jdt.ui.javaPostfixProposalCategory\u0000org.eclipse.jdt.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.jdt.ui.javaChainProposalCategory\u0000
+content_assist_favorite_static_members=org.assertj.core.api.Assertions.*;org.mockito.Matchers.*;org.mockito.Mockito.*;org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestBuilders.*;org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.*;org.springframework.security.test.web.servlet.response.SecurityMockMvcResultMatchers.*;org.springframework.security.test.web.servlet.setup.SecurityMockMvcConfigurers.*;org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.*;org.springframework.test.web.client.match.MockRestRequestMatchers.*;org.springframework.test.web.client.response.MockRestResponseCreators.*;org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;org.springframework.test.web.servlet.result.MockMvcResultHandlers.*;org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;org.hamcrest.CoreMatchers.*;org.junit.Assert.*
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.lang.CharSequence"><rhs name\="java.lang.StringBuilder"/><rhs name\="java.lang.String"/></lhs><lhs name\="java.lang.AbstractStringBuilder"><rhs name\="java.lang.StringBuilder"/></lhs><lhs name\="java.lang.Appendable"><rhs name\="java.lang.StringBuilder"/></lhs><lhs name\="java.lang.constant.Constable"><rhs name\="java.lang.Double"/><rhs name\="java.lang.Long"/><rhs name\="java.lang.String"/></lhs><lhs name\="java.lang.constant.ConstantDesc"><rhs name\="java.lang.Double"/><rhs name\="java.lang.Long"/><rhs name\="java.lang.String"/></lhs><lhs name\="practice02_collection1.MonHoc"><rhs name\="practice02_collection1.MonHoc"/></lhs><lhs name\="practice02_collection1.Diem"><rhs name\="practice02_collection1.Diem"/></lhs><lhs name\="practice02_collection1.SinhVien"><rhs name\="practice02_collection1.SinhVien"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.HashSet"/><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.HashSet"/><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.Set"><rhs name\="java.util.HashSet"/></lhs><lhs name\="java.util.Iterator"><rhs name\="java.util.Scanner"/></lhs><lhs name\="java.io.Closeable"><rhs name\="java.util.Scanner"/><rhs name\="java.io.FileInputStream"/></lhs><lhs name\="java.lang.AutoCloseable"><rhs name\="java.util.Scanner"/><rhs name\="java.io.FileInputStream"/></lhs><lhs name\="minitest.Account"><rhs name\="minitest.Account"/></lhs><lhs name\="java.lang.Number"><rhs name\="java.lang.Double"/><rhs name\="java.lang.Long"/></lhs><lhs name\="minitest.Transaction"><rhs name\="minitest.Transaction"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="java.util.Date"/></lhs><lhs name\="java.util.Date"><rhs name\="java.util.Date"/></lhs><lhs name\="minitest.DoBusiness"><rhs name\="minitest.Application"/></lhs><lhs name\="minitest.Application"><rhs name\="minitest.Application"/></lhs><lhs name\="fis.java.queue.Node"><rhs name\="fis.java.queue.Node"/></lhs><lhs name\="fis.java.queue.QueueImp"><rhs name\="fis.java.queue.QueueImp"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.io.InputStream"><rhs name\="java.io.FileInputStream"/></lhs><lhs name\="org.apache.log4j.Category"><rhs name\="org.apache.log4j.Logger"/></lhs><lhs name\="org.apache.log4j.spi.AppenderAttachable"><rhs name\="org.apache.log4j.Logger"/></lhs><lhs name\="org.apache.log4j.Logger"><rhs name\="org.apache.log4j.Logger"/></lhs><lhs name\="fis.java.exc01.Transaction"><rhs name\="fis.java.exc01.Transaction"/></lhs><lhs name\="fis.java.exc01.ReaderFile"><rhs name\="fis.java.exc01.ReaderFile"/></lhs><lhs name\="fis.java.exc01.Record"><rhs name\="fis.java.exc01.Record"/></lhs><lhs name\="java.util.Map"><rhs name\="java.util.HashMap"/></lhs><lhs name\="practice.springjdbc.model.Department"><rhs name\="practice.springjdbc.model.Department"/></lhs></history>
+content_assist_number_of_computers=22
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+java.codemining.references=false
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.formatterprofiles.version=21
+spelling_ignore_ampersand_in_properties=true
+spelling_ignore_digits=true
+spelling_ignore_java_strings=true
+spelling_ignore_mixed=true
+spelling_ignore_non_letters=true
+spelling_ignore_sentence=true
+spelling_ignore_single_letters=true
+spelling_ignore_upper=true
+spelling_ignore_urls=true
+spelling_locale_initialized=true
+spelling_user_dictionary_encoding=
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

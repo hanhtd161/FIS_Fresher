@@ -1,0 +1,5 @@
+package practice.spring.jdbc.demo;
+
+public class QueryForListReturnListMap_Test {
+
+}

@@ -1,0 +1,5 @@
+package practice.springjdbc.dao;
+
+public class QueryForRowSetReturnSqlRowSetDAO {
+
+}
