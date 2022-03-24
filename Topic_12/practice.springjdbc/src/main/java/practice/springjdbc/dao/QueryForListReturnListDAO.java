@@ -31,7 +31,6 @@ public class QueryForListReturnListDAO extends JdbcDaoSupport {
 	        String sql = "Select d.dept_name from Department d "//
 	                + " Where d.dept_name like ? ";
 
-	        // queryForList(String sql, Class<T> elementType, Object... args)
 	        List<String> list = this.getJdbcTemplate().queryForList(sql, String.class, //
 	                "%" + searchName + "%");
 

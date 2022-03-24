@@ -1,4 +1,4 @@
-package practice.spring.jdbc.demo;
+package practice.springjdbc.demo;
 
 import java.sql.SQLException;
 import java.util.List;
