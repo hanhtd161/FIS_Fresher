@@ -5,6 +5,7 @@ import java.util.Date;
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.fis.minitest.entity.Account;
 import com.fis.minitest.entity.Transaction;
@@ -14,6 +15,7 @@ import com.fis.minitest.service.AccountService;
 import com.fis.minitest.service.TransactionService;
 import com.fis.minitest.util.CONSTANT;
 
+@Service
 public class TransactionServiceImp implements TransactionService {
 	
 	@Autowired
@@ -37,13 +39,14 @@ public class TransactionServiceImp implements TransactionService {
 			transaction.setErrorReason("Tai khoan den hoac di khong con hieu luc");
 			transaction.setStatus(CONSTANT.TRANSACTION_STATUS_FAIL);
 		}
-		if(fromAccount.getBalance() < form.getAmount()) {
+		else if(fromAccount.getBalance() < form.getAmount()) {
 			transaction.setErrorReason("Tai khoan nguon khong du tien");
 			transaction.setStatus(CONSTANT.TRANSACTION_STATUS_FAIL);
+		} else {
+			fromAccount.setBalance(fromAccount.getBalance() - form.getAmount());
+			toAccount.setBalance(toAccount.getBalance() + form.getAmount());
+			transaction.setStatus(CONSTANT.TRANSACTION_STATUS_SUCCESS);
 		}
-		fromAccount.setBalance(fromAccount.getBalance() - form.getAmount());
-		toAccount.setBalance(toAccount.getBalance() + form.getAmount());
-		transaction.setStatus(CONSTANT.TRANSACTION_STATUS_SUCCESS);
 		return transactionRepo.save(transaction);
 	}
 	
