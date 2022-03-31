@@ -1,5 +1,7 @@
 package com.fis.ecommerce.controller;
 
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,8 +14,8 @@ import com.fis.ecommerce.entity.Customer;
 import com.fis.ecommerce.entity.Order;
 import com.fis.ecommerce.entity.OrderDetail;
 import com.fis.ecommerce.entity.Product;
-import com.fis.ecommerce.repo.OrderDetailRepo;
 import com.fis.ecommerce.service.CustomerService;
+import com.fis.ecommerce.service.OrderDetailService;
 import com.fis.ecommerce.service.OrderService;
 import com.fis.ecommerce.service.ProductService;
 
@@ -30,12 +32,13 @@ public class OrderController {
 	private ProductService productService;
 	
 	@Autowired
-	private OrderDetailRepo orderDetailRepo;
+	private OrderDetailService orderDetailService;
 	
 	@GetMapping("/create")
 	public ResponseEntity<?> createNewOrder(@RequestParam(required = true) long customerId){
 		Customer customer = customerService.findCustomerById(customerId);
 		Order order = new Order();
+		order.setDate(new Date());
 		customer.addOrder(order);
 		return ResponseEntity.ok(orderService.createOrder(order));
 	}
@@ -48,7 +51,7 @@ public class OrderController {
 	
 	@GetMapping("/remove-OrderDetail/{orderDetailId}")
 	public ResponseEntity<?> removeOrderDetail(@RequestParam long orderId, @PathVariable long orderDetailId){
-		OrderDetail orderDetail = orderDetailRepo.findById(orderDetailId).orElse(null);
+		OrderDetail orderDetail = orderDetailService.findById(orderDetailId);
 		if(orderDetail == null) {
 			return ResponseEntity.badRequest().body("OrderDetails Id not found!");
 		}

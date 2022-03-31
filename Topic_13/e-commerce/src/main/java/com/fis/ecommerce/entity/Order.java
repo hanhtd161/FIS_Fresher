@@ -1,5 +1,6 @@
 package com.fis.ecommerce.entity;
 
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -34,6 +35,8 @@ public class Order {
 	@ManyToOne
 	@JoinColumn(name = "customer_id")
 	private Customer customer;
+	
+	private Date date;
 	
 	public void addOrderDetail(OrderDetail orderDetail) {
 		this.orderDetails.add(orderDetail);
