@@ -1,4 +1,4 @@
-package com.fis.project.service.controller;
+package com.fis.project.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

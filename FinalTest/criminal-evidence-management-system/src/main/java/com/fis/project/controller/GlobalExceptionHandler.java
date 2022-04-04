@@ -1,4 +1,4 @@
-package com.fis.project.service.controller;
+package com.fis.project.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;

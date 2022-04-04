@@ -63,6 +63,7 @@ public class CriminalCase extends AbstractEntity {
 			inverseJoinColumns = @JoinColumn(name = "detective_id")
 			)
 	@Builder.Default
+	@JsonIgnore
 	@Exclude
 	private Set<Detective> assigned = new HashSet<>();
 	

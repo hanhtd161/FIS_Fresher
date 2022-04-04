@@ -9,6 +9,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
@@ -30,6 +32,7 @@ public class Evidence extends AbstractEntity{
 	private Storage storage;
 	
 	@OneToMany(cascade = CascadeType.ALL,mappedBy = "evidence")
+	@JsonIgnore
 	@Exclude
 	private Set<TrackEntry> trackEntries = new HashSet<>();
 	
